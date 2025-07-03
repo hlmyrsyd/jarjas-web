@@ -5,7 +5,7 @@ import NavItem from "./navItem";
 
 export default function NavigationBar() {
     return (
-        <div className="sticky right-0 top-0 flex w-full px-60 py-4 bg-[#d9d9d9] drop-shadow-2xl justify-between items-center">
+        <div className="sticky right-0 top-0 flex w-full px-60 py-4 bg-[#1E1E1E] drop-shadow-2xl justify-between items-center">
             <div>
                 Logo
             </div>

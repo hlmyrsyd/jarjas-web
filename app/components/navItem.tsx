@@ -12,7 +12,7 @@ export default function NavItem({ text, href }: NavItemProps) {
     return (
         <motion.a
         href={href}
-        className="cursor-pointer"
+        className="cursor-pointer "
         whileTap={{
             y: '1px',
             scale: 0.95,

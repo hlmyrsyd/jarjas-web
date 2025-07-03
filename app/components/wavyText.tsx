@@ -57,7 +57,7 @@ export const WavyText = ({ text }: { text: string }) => {
                         <motion.span
                             key={index}
                             variants={letterVariants}
-                            className="inline-block"
+                            className="inline-block text-neutral-500"
                         >
                             {letter === " " ? "\u00A0" : letter}
                         </motion.span>
@@ -68,7 +68,7 @@ export const WavyText = ({ text }: { text: string }) => {
                         <motion.span
                             key={index}
                             variants={secondVariants}
-                            className="inline-block"
+                            className="inline-block text-amber-500"
                         >
                             {letter === " " ? "\u00A0" : letter}
                         </motion.span>
@@ -78,7 +78,7 @@ export const WavyText = ({ text }: { text: string }) => {
 
             {/* Bottom Border Animation - Placed outside of text div */}
             <motion.div 
-                className="h-[1px] bg-black mt-1" // Border settings
+                className="h-[1px] bg-amber-500 mt-1" // Border settings
                 variants={borderVariants}
                 initial="initial"
                 animate={isHovered ? "hover" : "exit"} // Animate based on hover state
