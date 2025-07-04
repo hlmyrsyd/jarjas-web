@@ -1,7 +1,7 @@
 'use client'
 
 import Lenis from "lenis";
-import { NavigationBar } from "./components";
+import { Hero, NavigationBar } from "./components";
 
 export default function Home() {
   const lenis = new Lenis({
@@ -16,10 +16,11 @@ export default function Home() {
   requestAnimationFrame(raf);
 
   return (
-    <div className="flex flex-col w-full h-[300vh]">
+    <div className="flex flex-col w-full h-[300vh] bg-[#1E1E1E]">
       <NavigationBar />
       <div className="flex flex-col px-60 py-10">
-        Hero
+        <Hero />
+        
       </div>
     </div>
   );
