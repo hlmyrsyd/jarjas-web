@@ -1,7 +1,7 @@
 'use client'
 
 import Lenis from "lenis";
-import { Hero, NavigationBar } from "./components";
+import { Hero, LearnMore, NavigationBar } from "./components";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -26,8 +26,9 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full h-[300vh] bg-[#1E1E1E]">
       <NavigationBar />
-      <div className="flex flex-col px-60 py-10">
+      <div className="flex flex-col px-60 py-10 gap-20">
         <Hero />
+        <LearnMore />
 
       </div>
     </div>

@@ -8,19 +8,19 @@ export const WavyText = ({ text }: { text: string }) => {
 
     const letterVariants = {
         initial: { y: 0 }, // Default position
-        hover: { y: -22, transition: { ease: easeInOut, duration: 0.5 } }, // Moves up on hover
+        hover: { y: -22, transition: { ease: easeInOut, duration: 0.3 } }, // Moves up on hover
         exit: { y: 0, transition: { ease: circInOut, duration: 0.5 } }, // Moves down on hover exit
     };
 
     const secondVariants = {
         initial: { y: 20 }, // Default position
-        hover: { y: 0, transition: { ease: easeInOut, duration: 0.4 } }, // Moves up on hover
+        hover: { y: 0, transition: { ease: easeInOut, duration: 0.2 } }, // Moves up on hover
         exit: { y: 20, transition: { ease: circInOut, duration: 0.4 } }, // Moves down on hover exit
     };
 
     const borderVariants = {
         initial: { width: 0 },
-        hover: { width: "100%", transition: { ease: circInOut, duration: 0.8 } }, // Smoothly moves from left to right
+        hover: { width: "100%", transition: { ease: circInOut, duration: 0.3 } }, // Smoothly moves from left to right
         exit: { width: 0, transition: { ease: circInOut, duration: 0.2, delay: 0.2 } }, // Retracts smoothly
     };
 
@@ -57,7 +57,7 @@ export const WavyText = ({ text }: { text: string }) => {
                         <motion.span
                             key={index}
                             variants={letterVariants}
-                            className="inline-block text-neutral-500"
+                            className="inline-block text-white"
                         >
                             {letter === " " ? "\u00A0" : letter}
                         </motion.span>
