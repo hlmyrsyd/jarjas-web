@@ -6,8 +6,8 @@ import Button from "./button"
 export default function LearnMore() {
     return (
         <div className="flex flex-row justify-between w-full h-full bg-white p-10 rounded-2xl gap-6 ">
-            <div className="flex flex-col w-full h-full justify-between">
-                <div className="flex flex-col gap-6">
+            <div className="flex flex-col w-full h-fullk justify-between">
+                <div className="flex flex-col gap-6 ">
                     <h1 className="text-amber-500 font-black text-4xl">
                         Step up your Brand!
                     </h1>
