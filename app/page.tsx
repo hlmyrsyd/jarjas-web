@@ -1,7 +1,7 @@
 'use client'
 
 import Lenis from "lenis";
-import { Footer, Hero, LearnMore, NavigationBar } from "./components";
+import { Footer, Hero, LearnMore, LoopingProject, NavigationBar } from "./components";
 import { useEffect } from "react";
 import StillDevelopment from "./components/stillDevelopment";
 
@@ -30,6 +30,7 @@ export default function Home() {
       <div className="flex flex-col px-60 py-10 gap-20">
         <Hero />
         <LearnMore />
+        <LoopingProject />
         <StillDevelopment />
       </div>
       <Footer />
