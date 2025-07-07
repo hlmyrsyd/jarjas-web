@@ -1,7 +1,7 @@
 'use client'
 
 import Lenis from "lenis";
-import { Footer, Hero, LearnMore, LoopingProject, NavigationBar, WorkShowcase } from "./components";
+import { Footer, Hero, LearnMore, LoopingProject, NavigationBar, ServiceShowcase, WorkShowcase } from "./components";
 import { useEffect } from "react";
 import StillDevelopment from "./components/stillDevelopment";
 
@@ -32,9 +32,15 @@ export default function Home() {
         <LearnMore />
         <LoopingProject />
         <WorkShowcase />
-        <StillDevelopment />
+      </div>
+      <div className="flex flex-col px-60 py-10 gap-20 bg-white">
+        <ServiceShowcase />
+
+      </div>
+      <div className="flex flex-col px-60 py-10 gap-20">
       </div>
       <Footer />
+      <StillDevelopment />
     </div>
   );
 }
