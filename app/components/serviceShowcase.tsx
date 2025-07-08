@@ -1,3 +1,4 @@
+import Button from "./button";
 import NavItem from "./navItem";
 
 export default function ServiceShowcase() {
@@ -80,6 +81,15 @@ export default function ServiceShowcase() {
                         <NavItem text={"Digital Learning"} href={"#digital-learning"} />
                     </div>
                 </div>
+            </div>
+            <div className="flex gap-5 flex-col pt-10 px-60 w-full justify-center items-center">
+                <h2 className="text-2xl font-bold text-neutral-600 text-center">
+                    “At Jarjas, our services are <span className="font-black italic">à la carte — tailored</span> to each brand&apos;s core problems and most urgent needs. We&apos;re highly objective. We talk first, analyze deeply, and decide carefully before taking on any project.”
+                </h2>
+                <Button 
+                    text={"Learn More"} 
+                    href={"#learnMore"}
+                />
             </div>
         </div>
     )
