@@ -1,7 +1,7 @@
 export default function Hero() {
     return (
         <div className="flex flex-col py-10 text-white">
-            <p>
+            <p className="pb-5 font-semibold text-center lg:text-left">
                 We Are Jarjas
             </p>
             <div className="flex flex-col lg:flex-row w-full h-full justify-center lg:justify-start items-center gap-5">
@@ -12,7 +12,7 @@ export default function Hero() {
                     UMKM
                 </h1>
             </div>
-            <h1 className="text-5xl pt-8">
+            <h1 className="text-5xl pt-8 text-center lg:text-left">
                 dalam Branding & Digital yang <span className="font-bold italic text-neutral-500">Bercerita dan Berkembang bersama.</span>
             </h1>
         </div>

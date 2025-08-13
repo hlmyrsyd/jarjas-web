@@ -23,7 +23,7 @@ export default function NavigationBar() {
             <div className="lg:flex w-full hidden px-30 2xl:px-60 py-4 backdrop-blur-sm drop-shadow-md justify-between items-center">
                 
                 <div className="text-white font-extrabold">
-                    Jarjas
+                    JARJAS
                 </div>
                 <div className="flex flex-row gap-10 font-bold">
                 </div>
