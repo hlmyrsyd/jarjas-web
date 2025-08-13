@@ -9,16 +9,17 @@ export default function LearnMore() {
             <div className="flex flex-col w-full h-fullk justify-between">
                 <div className="flex flex-col gap-6 ">
                     <h1 className="text-amber-500 font-black text-4xl">
-                        Step up your Brand!
+                        Saatnya Naikkan Brand-mu!
                     </h1>
                     <p className="text-neutral-600 ">
-                        We&apos;re a <span className="font-semibold">walk-the-talk and talk-the-walk</span> strategic partner. We don&apos;t just execute —
-                        <br />we think, we discuss, and we build things together with you.
+                        Kami hadir untuk berdiskusi, memberi masukan strategis,
+                        <br/>dan membangung bersama agar brand-mu tumbuh dan bercerita.
                     </p>
                 </div>
                 <Button 
-                    text={"Learn More"} 
-                    href={"#learnMore"}
+                    text={"Ayo Konsultasi Gratis!"} 
+                    href={"https://wa.me/62811877432?text=Halo%20Jarjas%20saya%20ingin%20konsultasi"}
+                    target="_blank"
                 />
             </div>
             <Image 

@@ -4,8 +4,8 @@ export default function Hero() {
             <p>
                 We Are Jarjas
             </p>
-            <div className="flex flex-row w-full h-full items-center gap-5">
-                <h1 className="text-5xl font-bold text-amber-500 pb-2">
+            <div className="flex flex-col lg:flex-row w-full h-full justify-center lg:justify-start items-center gap-5">
+                <h1 className="text-center lg:text-left text-5xl font-bold text-amber-500 pb-2">
                     MITRA STRATEGIS
                 </h1>
                 <h1 className="w-fit font-bold text-5xl italic mb-4 py-3 px-8 bg-amber-500 rounded-2xl -rotate-4">

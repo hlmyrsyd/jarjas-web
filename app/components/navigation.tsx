@@ -34,8 +34,9 @@ export default function NavigationBar() {
                     <NavItem text="About Us" href="#aboutus" />
                 </div>
                 <Button 
-                    text={"Get Started"} 
-                    href={"#getStarted"}
+                    text={"Konsultasi Gratis!"} 
+                    href={"https://wa.me/62811877432?text=Halo%20Jarjas%20saya%20ingin%20konsultasi"}
+                    target="_blank"
                 />
             </div>
             <motion.div
