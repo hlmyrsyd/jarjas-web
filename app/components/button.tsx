@@ -14,7 +14,7 @@ export default function Button({ text, href, target }: ButtonProps) {
         href={href}
         target={target}
         rel={target === "_blank" ? "noopener noreferrer" : undefined}
-        className="w-fit font-bold py-2 px-6 rounded-full cursor-pointer text-white"
+        className="flex text-center justify-center items-center w-fit font-bold py-2 px-6 rounded-full cursor-pointer text-white"
         whileHover={{
             y: '-4px',
             backgroundColor: '#f17a1d',

@@ -15,13 +15,13 @@ const logos = [
 export default function LoopingProject() {
     return (
         <div className="flex flex-col w-full h-full">
-            <div className="flex flex-row w-full h-full py-10 items-center ">
-                <div className="flex flex-col gap-5 w-1/4">
+            <div className="flex flex-col-reverse lg:flex-row w-full h-full py-10 items-center ">
+                <div className="flex flex-col gap-5 w-full text-center items-center lg:items-start lg:text-left lg:w-1/4">
                     <div className="text-amber-500 font-black text-3xl">
-                        They&apos;ve been <span className="italic">Stepping Up</span>
-                        <br />Are you next? 
+                        Mereka sudah <span className="italic">melangkah lebih jauh</span>
+                        <br />Apakah kamu yang berikutnya? 
                     </div>
-                    <p className="text-white">You just might be the next game-changing brand.</p>
+                    <p className="text-white">Brand-mu bisa jadi pembeda besar di pasar.</p>
                 </div>
                 {/* LOOPING LOGO */}
                 <div className="flex w-3/4 h-full items-center">
@@ -31,27 +31,42 @@ export default function LoopingProject() {
             <div className="flex flex-row w-full h-full bg-amber-500 text-white rounded-2xl p-10">
                 <div className="flex flex-col w-full h-full items-center justify-center">
                     <h1 className="font-black text-6xl">
-                        10
+                        150+
                     </h1>
-                    <p className="font-black">
-                        Team Member
-                    </p>
+                    <div className="flex flex-col justify-center items-center">
+                        <p className="text-3xl font-black">
+                            UMKM
+                        </p>
+                        <p>
+                            dibantu naik kelas
+                        </p>
+                    </div>
                 </div>
                 <div className="flex flex-col w-full h-full items-center justify-center">
                     <h1 className="font-black text-6xl">
-                        100+
+                        30+
                     </h1>
-                    <p className="font-black">
-                        Brand Partners 
-                    </p>
+                    <div className="flex flex-col justify-center items-center">
+                        <p className="text-3xl font-black">
+                            Kota
+                        </p>
+                        <p>
+                            terjangkau layanan kami
+                        </p>
+                    </div>
                 </div>
                 <div className="flex flex-col w-full h-full items-center justify-center">
                     <h1 className="font-black text-6xl">
-                        Rp 500 M
+                        8+
                     </h1>
-                    <p className="font-black">
-                        Profit / Year
-                    </p>
+                    <div className="flex flex-col justify-center items-center">
+                        <p className="text-3xl font-black">
+                            Tahun
+                        </p>
+                        <p>
+                            jadi teman berpikir brand lokal
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

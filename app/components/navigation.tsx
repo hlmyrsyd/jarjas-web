@@ -1,7 +1,6 @@
 'use client'
 
 import { motion, useScroll } from "framer-motion";
-import NavItem from "./navItem";
 import { useEffect, useState } from "react";
 import Button from "./button";
 
@@ -21,17 +20,12 @@ export default function NavigationBar() {
 
     return (
         <div className="sticky right-0 top-0 z-50 bg-[#1E1E1E]/50">
-            <div className="flex w-full px-60 py-4 backdrop-blur-sm drop-shadow-md justify-between items-center">
+            <div className="lg:flex w-full hidden px-30 2xl:px-60 py-4 backdrop-blur-sm drop-shadow-md justify-between items-center">
                 
                 <div className="text-white font-extrabold">
                     Jarjas
                 </div>
                 <div className="flex flex-row gap-10 font-bold">
-                    <NavItem text="Services" href="#services" />
-                    <NavItem text="Our Works" href="#ourworks" />
-                    <NavItem text="How We Roll" href="#howweroll" />
-                    <NavItem text="Career" href="#career" />
-                    <NavItem text="About Us" href="#aboutus" />
                 </div>
                 <Button 
                     text={"Konsultasi Gratis!"} 

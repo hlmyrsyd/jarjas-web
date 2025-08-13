@@ -16,13 +16,16 @@ export default function LearnMore() {
                         <br/>dan membangung bersama agar brand-mu tumbuh dan bercerita.
                     </p>
                 </div>
-                <Button 
-                    text={"Ayo Konsultasi Gratis!"} 
-                    href={"https://wa.me/62811877432?text=Halo%20Jarjas%20saya%20ingin%20konsultasi"}
-                    target="_blank"
-                />
+                <div className="pt-10">
+                    <Button 
+                        text={"Ayo Konsultasi Gratis!"} 
+                        href={"https://wa.me/62811877432?text=Halo%20Jarjas%20saya%20ingin%20konsultasi"}
+                        target="_blank"
+                    />
+                </div>
             </div>
-            <Image 
+            <Image
+                className="hidden xl:block"
                 src={"/image/learnMoreImg.jpg"}
                 width={500}
                 height={500}

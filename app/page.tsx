@@ -27,17 +27,17 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full h-full bg-[#1E1E1E]">
       <NavigationBar />
-      <div className="flex flex-col px-10 lg:px-60 py-10 gap-20">
+      <div className="flex flex-col px-10 xl:px-30 2xl:px-60 py-10 gap-20">
         <Hero />
         <LearnMore />
         <LoopingProject />
         <WorkShowcase />
       </div>
-      <div className="flex flex-col px-10 lg:px-60 py-10 gap-20 bg-white">
+      <div className="flex flex-col px-10 xl:px-30 2xl:px-60 py-10 gap-20 bg-white">
         <ServiceShowcase />
 
       </div>
-      <div className="flex flex-col px-10 lg:px-60 py-10 gap-20">
+      <div className="flex flex-col px-10 xl:px-30 2xl:px-60 py-10 gap-20">
       </div>
       <Footer />
       <div className="opacity-0">
