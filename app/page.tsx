@@ -40,7 +40,9 @@ export default function Home() {
       <div className="flex flex-col px-60 py-10 gap-20">
       </div>
       <Footer />
-      {/* <StillDevelopment /> */}
+      <div className="opacity-0">
+        <StillDevelopment />
+      </div>
     </div>
   );
 }
