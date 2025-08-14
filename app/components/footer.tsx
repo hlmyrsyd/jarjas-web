@@ -26,9 +26,9 @@ export default function Footer() {
                     <p className="text-neutral-700">
                         Citra Sentul Raya, Exit Tol Sirkuit Sentul Km.33 Jl. River Park Boulevard Blok A No.1, Bogor Regency, West Java 16810
                     </p>
-                    <p className="font-semibold">
+                    <p className="font-semibold text-xs md:text-lg">
                         (081) 1877432
-                        <br /> halo@@jarjasdesign.com
+                        <br /> halo@jarjasdesign.com
                     </p>
                 </div>
             </div>
