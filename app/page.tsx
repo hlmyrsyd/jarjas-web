@@ -3,7 +3,6 @@
 import Lenis from "lenis";
 import { Footer, Hero, LearnMore, LoopingProject, NavigationBar, ServiceShowcase, WorkShowcase } from "./components";
 import { useEffect } from "react";
-import StillDevelopment from "./components/stillDevelopment";
 
 export default function Home() {
   useEffect(() => {
@@ -35,14 +34,8 @@ export default function Home() {
       </div>
       <div className="flex flex-col px-10 xl:px-30 2xl:px-60 py-10 gap-20 bg-white">
         <ServiceShowcase />
-
-      </div>
-      <div className="flex flex-col px-10 xl:px-30 2xl:px-60 py-10 gap-20">
       </div>
       <Footer />
-      <div className="opacity-0">
-        <StillDevelopment />
-      </div>
     </div>
   );
 }

@@ -3,18 +3,16 @@ import NavItem from "./navItem";
 
 export default function ServiceShowcase() {
     return (
-        <div className="flex flex-col gap-5">
-            <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-full">
+            <div className="flex flex-col gap-5 w-full lg:w-1/2">
                 <h1 className="font-black text-4xl text-amber-500">
-                    This is something we&apos;re 
-                    <br />truly passionate about
+                    Lebih dari Sekadar Desain
                 </h1>
                 <p className="text-neutral-500">
-                    At Jarjas, we deliver services built on proven best practices — drawn from our own journey as 
-                    <br />brand owners and from our experience working with over 100+ brand partners.
+                    Kami tidak hanya membuat tampilan yang indah, tapi juga membantu Anda menyusun strategi brand, merencanakan konten, dan membangun cerita yang menguatkan hubungan dengan pelanggan.
                 </p>
             </div>
-            <div className="flex flex-row w-full h-full gap-5">
+            <div className="flex flex-col lg:flex-row w-full h-full gap-5">
                 {/* LEFT */}
                 <div className="flex flex-col text-white w-full bg-violet-800 rounded-2xl p-10 gap-3">
                     <h1 className="text-4xl font-bold">
@@ -30,6 +28,9 @@ export default function ServiceShowcase() {
                         <NavItem text={"Visual Identity Creation"} href={"#visual-identity-creation"} />
                         <NavItem text={"Visual Curation & Production"} href={"#visual-curation-production"} />
                         <NavItem text={"Website UI & UX"} href={"#website-ui-ux"} />
+                        <NavItem text={"Website Development"} href={"#website-development"} />
+                        <NavItem text={"Video & Photography"} href={"#video-photography"} />
+                        <NavItem text={"Corporate Branding"} href={"#corporate-branding"} />
                     </div>
                 </div>
                 {/* MID */}
@@ -61,8 +62,6 @@ export default function ServiceShowcase() {
                         <div className="flex flex-col w-full h-full justify-center items-start gap-3">
                             <NavItem text={"Digital Advertising"} href={"#digital-advertising"} />
                             <NavItem text={"Digital Ads Content Production"} href={"#digital-ads-content-production"} />
-                            <NavItem text={"CRM & Email Newsletter"} href={"#crm-email-newsletter"} />
-                            <NavItem text={"Out of Home Media Buying"} href={"#out-of-home-media-buying"} />
                         </div>
                     </div>
                 </div>
@@ -82,13 +81,14 @@ export default function ServiceShowcase() {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-5 flex-col pt-10 px-60 w-full justify-center items-center">
+            <div className="flex gap-5 flex-col pt-10 px-10 lg:px-60 w-full justify-center items-center">
                 <h2 className="text-2xl font-bold text-neutral-600 text-center">
-                    “At Jarjas, our services are <span className="font-black italic">à la carte — tailored</span> to each brand&apos;s core problems and most urgent needs. We&apos;re highly objective. We talk first, analyze deeply, and decide carefully before taking on any project.”
+                    “Di Jarjas, layanan kami bersifat <span className="font-black italic">à la carte —</span> disesuaikan dengan masalah inti dan kebutuhan paling mendesak setiap merek. Kami sangat objektif. Kami berdiskusi terlebih dahulu, menganalisis secara mendalam, dan memutuskan dengan hati-hati sebelum mengambil proyek apa pun.”
                 </h2>
                 <Button 
-                    text={"Learn More"} 
-                    href={"#learnMore"}
+                    text={"Ayo Konsultasi Gratis!"} 
+                    href={"https://wa.me/62811877432?text=Halo%20Jarjas%20saya%20ingin%20konsultasi"}
+                    target="_blank"
                 />
             </div>
         </div>

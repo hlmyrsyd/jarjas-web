@@ -17,6 +17,7 @@ export default function FooterItem({ text, href }: FooterItemProps) {
             y: '1px',
             scale: 0.95,
         }}
+        target="_blank"
         >
         <FooterWavyText text={text} />
         </motion.a>
