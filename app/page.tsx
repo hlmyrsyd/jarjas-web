@@ -1,10 +1,11 @@
 'use client'
 
 import Lenis from "lenis";
-import { Footer, Hero, LearnMore, LoopingProject, NavigationBar, ServiceShowcase, WorkShowcase } from "./components";
+import { Footer, Hero, LearnMore, LoopingProject, NavigationBar, OpeningContainer, ServiceShowcase, WorkShowcase } from "./components";
 import { useEffect } from "react";
 
 export default function Home() {
+  
   useEffect(() => {
     const lenis = new Lenis({
       autoRaf: true,
@@ -25,6 +26,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col w-full h-full bg-[#1E1E1E]">
+      <OpeningContainer title="We Are JARJAS" />
       <NavigationBar />
       <div className="flex flex-col px-10 xl:px-30 2xl:px-60 py-10 gap-20">
         <Hero />

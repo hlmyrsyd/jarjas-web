@@ -19,7 +19,7 @@ export default function NavigationBar() {
     }, [scrollYProgress]);
 
     return (
-        <div className="sticky right-0 top-0 z-50 bg-[#1E1E1E]/50">
+        <div className="sticky right-0 top-0 z-40 bg-[#1E1E1E]/50">
             <div className="lg:flex w-full hidden px-30 2xl:px-60 py-4 backdrop-blur-sm drop-shadow-md justify-between items-center">
                 
                 <div className="text-white font-extrabold">

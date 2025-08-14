@@ -24,11 +24,11 @@ export default function Footer() {
                         Home Base
                     </h1>
                     <p className="text-xs md:text-lg text-neutral-700">
-                        Citra Sentul Raya, Exit Tol Sirkuit Sentul Km.33 Jl. River Park Boulevard Blok A No.1, Bogor Regency, West Java 16810
+                        Citra Sentul Raya, West Java 16810
                     </p>
                     <p className="font-semibold text-xs md:text-lg">
-                        (081) 1877432
-                        <br /> halo@jarjasdesign.com
+                        (62) 811 877 432
+                        <br /> jarjasdesign@gmail.com
                     </p>
                 </div>
             </div>
