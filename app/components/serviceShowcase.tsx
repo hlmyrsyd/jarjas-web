@@ -14,7 +14,7 @@ export default function ServiceShowcase() {
             </div>
             <div className="flex flex-col lg:flex-row w-full h-full gap-5">
                 {/* LEFT */}
-                <div className="flex flex-col text-white w-full bg-violet-800 rounded-2xl p-10 gap-3">
+                <div className="flex flex-col text-white w-full bg-neutral-500 rounded-2xl p-10 gap-3">
                     <h1 className="text-4xl font-bold">
                         Branding
                     </h1>
@@ -35,7 +35,7 @@ export default function ServiceShowcase() {
                 </div>
                 {/* MID */}
                 <div className="flex flex-col h-full w-full gap-5">
-                    <div className="flex flex-col text-white w-full h-full bg-violet-800 rounded-2xl p-10 gap-3">
+                    <div className="flex flex-col text-white w-full h-full bg-neutral-500 rounded-2xl p-10 gap-3">
                         <h1 className="text-4xl font-bold">
                             Marketing
                         </h1>
@@ -51,7 +51,7 @@ export default function ServiceShowcase() {
                             <NavItem text={"Social Media Management"} href={"#social-media-management"} />
                         </div>
                     </div>
-                    <div className="flex flex-col text-white w-full h-full bg-violet-800 rounded-2xl p-10 gap-3">
+                    <div className="flex flex-col text-white w-full h-full bg-neutral-500 rounded-2xl p-10 gap-3">
                         <h1 className="text-4xl font-bold">
                             Advertising
                         </h1>
@@ -66,7 +66,7 @@ export default function ServiceShowcase() {
                     </div>
                 </div>
                 {/* RIGHT  */}
-                <div className="flex flex-col text-white w-full bg-violet-800 rounded-2xl p-10 gap-3">
+                <div className="flex flex-col text-white w-full bg-neutral-500 rounded-2xl p-10 gap-3">
                     <h1 className="text-4xl font-bold">
                         Education
                     </h1>
