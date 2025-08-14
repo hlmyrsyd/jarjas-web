@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import InfiniteLogo from "./infiniteLogo";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const logos = [
     <Image key={1} src="/logos/logo1.png" alt="1" width={100} height={50} />,
@@ -10,9 +12,15 @@ const logos = [
     <Image key={4} src="/logos/logo4.png" alt="4" width={100} height={50} />,
     <Image key={5} src="/logos/logo5.png" alt="5" width={100} height={50} />,
     <Image key={6} src="/logos/logo6.png" alt="6" width={100} height={50} />,
+    <Image key={6} src="/logos/logo7.png" alt="7" width={100} height={50} />,
 ];
 
 export default function LoopingProject() {
+    const { ref, inView } = useInView({
+        triggerOnce: false, // only trigger once
+        threshold: 0.1, // trigger when 30% visible
+    });
+
     return (
         <div className="flex flex-col w-full h-full">
             <div className="flex flex-col-reverse lg:flex-row w-full h-full py-10 items-center ">
@@ -28,47 +36,31 @@ export default function LoopingProject() {
                     <InfiniteLogo logos={logos} speed={12} />
                 </div>
             </div>
-            <div className="flex flex-row w-full h-full bg-amber-500 text-white rounded-2xl p-10">
-                <div className="flex flex-col w-full h-full items-center justify-center">
-                    <h1 className="font-black text-6xl">
-                        150+
-                    </h1>
-                    <div className="flex flex-col justify-center items-center">
-                        <p className="text-3xl font-black">
-                            UMKM
-                        </p>
-                        <p>
-                            dibantu naik kelas
-                        </p>
-                    </div>
-                </div>
-                <div className="flex flex-col w-full h-full items-center justify-center">
-                    <h1 className="font-black text-6xl">
-                        30+
-                    </h1>
-                    <div className="flex flex-col justify-center items-center">
-                        <p className="text-3xl font-black">
-                            Kota
-                        </p>
-                        <p>
-                            terjangkau layanan kami
-                        </p>
-                    </div>
-                </div>
-                <div className="flex flex-col w-full h-full items-center justify-center">
-                    <h1 className="font-black text-6xl">
-                        8+
-                    </h1>
-                    <div className="flex flex-col justify-center items-center">
-                        <p className="text-3xl font-black">
-                            Tahun
-                        </p>
-                        <p>
-                            jadi teman berpikir brand lokal
-                        </p>
-                    </div>
-                </div>
+
+            {/* COUNTER */}
+            <div 
+                ref={ref} 
+                className="flex md:flex-row gap-10 flex-col text-center w-full h-full bg-amber-500 text-white rounded-2xl p-10"
+            >
+                <CounterCard end={150} label="UMKM" subLabel="Dibantu naik kelas" inView={inView} />
+                <CounterCard end={30} label="Kota" subLabel="Terjangkau layanan kami" inView={inView} />
+                <CounterCard end={8} label="Tahun" subLabel="Jadi teman berpikir brand lokal" inView={inView} />
             </div>
+
         </div>
     )
 };
+
+function CounterCard({ end, label, subLabel, inView }: { end: number, label: string, subLabel: string, inView: boolean }) {
+    return (
+        <div className="flex flex-col w-full h-full items-center justify-center">
+            <h1 className="font-black text-6xl">
+                {inView ? <CountUp end={end} duration={2} /> : 0}+
+            </h1>
+            <div className="flex flex-col justify-center items-center">
+                <p className="text-3xl font-black">{label}</p>
+                <p>{subLabel}</p>
+            </div>
+        </div>
+    );
+}
